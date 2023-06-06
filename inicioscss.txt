@@ -1,0 +1,13 @@
+Trabajar con SASS
+
+1. Crear carpeta con scss con un archivo styles.scss
+2. hacer un respaldo del css
+
+comandos:
+
+1. npm init (iniciar el node package manager) el gestor de paquetes de node
+2. npm install -g sass
+3. sass --watch scss:css
+
+4. para finalizar  a compilación presionar ctrl+c
+5. para volvera iniciar la consola de sass presionar debemos ejecutar el comando "sass --watch scss:css"

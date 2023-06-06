@@ -1,0 +1,21 @@
+
+// estilos comunes para todas las secciones
+
+body{
+    font-family: $tipo-fuente;
+}
+
+.nav-link,
+.nav-link.active,
+.navbar-nav .nav-link.active{
+    
+
+    &:hover{
+        color: $color-2;
+    }
+}
+
+.navbar-toggler {
+    color: $color-2;
+    border-color: $color-2;
+}

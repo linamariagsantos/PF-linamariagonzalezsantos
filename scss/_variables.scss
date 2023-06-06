@@ -1,0 +1,27 @@
+// Color letra
+
+$color-0: white;
+$color-1: whitesmoke;
+$color-2: #84DCC6;
+$color-3: #5E5E5E;
+$color-4: #282829;
+$color-5: black;
+
+//tipo fuente
+$tipo-fuente: "Montserrat", sans-serif;
+
+//Tamaño de pantalla
+$pantalla-m: 768px;
+$pantalla-l: 1024px;
+
+//Mixins
+@mixin flex-centrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mixin-flex {
+    @include flex-centrado();
+}
+

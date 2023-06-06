@@ -1,0 +1,366 @@
+@import "variables";
+@import "inicio";
+@import "comunes";
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.inicio>* {
+    text-align: center;
+    /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); */
+    /* border: solid 1px grey; */
+}
+
+.header {
+    grid-area: header;
+}
+
+.navbar-nav {
+    margin: 16px;
+    margin-left: 120px;
+}
+
+.main-inicio {
+    grid-area: main-inicio;
+}
+
+.section1-inicio {
+    grid-area: section1-inicio;
+    background-color: $color-1;
+}
+
+.section2-inicio {
+    grid-area: section2-inicio;
+    padding-bottom: 20px;
+    background-color: $color-4;
+
+    p {
+        color: $color-0;
+    }
+}
+
+.section2-inicio-texto {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.divs-section2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.divs-section2-hijos {
+    width: 250px;
+    margin-bottom: 20px;
+
+    p {
+        font-weight: 600;
+        margin-bottom: 0px;
+        background-color: $color-2;
+        color: black;
+    }
+}
+
+.cuadro-lista {
+    margin-top: 30px;
+}
+
+.cuadro-texto {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+
+    p {
+        margin-top: 30px;
+    }
+}
+
+
+h1 {
+    padding: 30px;
+    margin-bottom: 0px;
+    font-size: x-large;
+    background-color: $color-2;
+    text-align: center;
+}
+
+h2 {
+    padding: 30px;
+    margin-bottom: 20px;
+    font-size: large;
+    background-color: $color-2;
+}
+
+span {
+    color: rgb(17, 114, 117);
+    font-weight: 500;
+}
+
+li {
+    margin: 5px;
+}
+
+.textos-imgs {
+    border-radius: 20px;
+}
+
+.imgs-index {
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 100%;
+
+    &:hover {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+    }
+
+    &:active {
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(132, 220, 198, 1);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(132, 220, 198, 1);
+        box-shadow: 0px 0px 30px 0px rgba(132, 220, 198, 1);
+    }
+
+}
+
+.footer {
+    grid-area: footer;
+    background-color: $color-3;
+    // display: flex;
+    // justify-content: center;
+
+    p {
+        margin-left: 10px;
+        color: $color-0;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+}
+
+.redes-sociales {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.iconos {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.ir-arriba {
+    color: $color-0;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.inicio {
+    grid-template-rows: auto auto auto auto;
+    display: grid;
+    /* gap: 10px; */
+    grid-template-areas:
+        "header"
+        "main-inicio"
+        "section1-inicio"
+        "section2-inicio"
+        "footer";
+}
+
+
+/* -------------------------SECCIÓN CADENA ENERGÉTICA---------------------------------------------- */
+
+.section1-cadenaenergetica {
+    text-align: center;
+    background-color: $color-1;
+
+    p {
+        font-weight: 500;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+
+.video-cadenaenergetica {
+    width: auto;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* -------------------------SECCIÓN MARCO REGULATORIO----------------------------------------------- */
+
+.marcoregulatorio-texto {
+    font-weight: 500;
+    text-align: justify;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: $color-2;
+
+}
+
+.marcoregulatorio-imagen {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $color-1;
+}
+
+/* ---------------------------SECCIÓN LIBROS RECOMENDADOS---------------------------------------------- */
+
+.libros-recomendados {
+    background-color: $color-1;
+    div{
+        padding: 40px;
+    }
+}
+
+/* --------------------------SECCIÓN CONTACTO-------------------------------------------------------- */
+
+
+form {
+    padding-top: 40px;
+    background-color: $color-1;
+    padding-bottom: 20px;
+}
+
+.labelscontacto {
+    font-weight: 500;
+}
+
+.divs-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 0px;
+    textarea {
+        width: auto;
+    }
+}
+
+.div-botones {
+    display: flex;
+    flex-direction: column;
+}
+
+.botones-textarea {
+    background-color: $color-2;
+    border-color: $color-0;
+}
+
+.div-mapa {
+    width: auto;
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+
+    .divs-section2 {
+        margin-left: 80px;
+        margin-right: 80px;
+        justify-items: center;
+        /* justify-content: space-evenly; */
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .video-cadenaenergetica {
+        width: 700px;
+        height: 455px;
+    }
+
+    .libros-recomendados {
+        padding: 20px;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .imgs-libros-recomendados {
+        width: 350px;
+    }
+
+    .divs-form {
+        align-items: center;
+    }
+
+    .divs-form textarea {
+        width: 540px;
+    }
+
+    .div-inquietudes {
+        width: 540px;
+    }
+
+    .div-botones {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botones-textarea {
+        width: 270px;
+    }
+
+    .inputs-contacto {
+        width: 540px;
+    }
+
+    .div-mapa {
+        align-items: center;
+        width: 540px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .marcoregulatorio-section {
+        display: grid;
+        grid-template-columns: 1.2fr 2fr;
+    }
+
+    .marcoregulatorio-imagen {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: $color-1;
+    }
+
+    .divs-section2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

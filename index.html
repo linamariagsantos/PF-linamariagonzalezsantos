@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Fuente de google montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/battery-storage.svg" type="image/x-icon">
+    <!--Link css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Inicio</title>
+</head>
+
+<body class="inicio">
+
+    <header class="header" id="arriba">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img src="img/battery-storage.svg" width="25" height="25" alt="Logo batería" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/cadenaenergetica.html">Cadena Energética</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/marcoregulatorio.html">Marco Regulatorio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/textos.html">Textos recomendados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+
+    <main class="main-inicio">
+        <div class="imagen-inicio">
+            <img src="img/aerogeneradores.jpg" alt="imagen-inicio">
+        </div>
+    </main>
+
+    <section class="section1-inicio">
+        <h1>¿Que es la energía?</h1>
+        <div class="cuadro-texto">
+            <p>La energía es la capacidad que tiene un cuerpo o sustancia para realizar un cambio o
+                transformarse y por ende, realizar un trabajo. En la naturaleza podemos distinguir varios tipos de
+                energías primarias, por ejemplo:
+            </p>
+            <ul class="cuadro-lista">
+                <li><span>Térmica:</span> Es la capacidad de la materia para transferir calor al medio o a otro
+                    cuerpo</li>
+                <li><span>Química:</span> Es aquella que se libera cuando la materia se transforma a través de
+                    una reacción química</li>
+                <li><span>Mecánica:</span> Es la suma de la energía asociada al movimiento de un cuerpo (energía
+                    cinética) y su capacidad de realizarlo (energía potencial)</li>
+                <li><span>Electromagnética:</span> Es la suma de la energía magnética y eléctrica contenida en
+                    un campo y que se emite en forma de radiación</li>
+                <li><span>Eléctrica:</span> Se genera por el flujo de electrones entre dos puntos con diferente
+                    potencial</li>
+                <li><span>Nuclear:</span> Es aquella contenida en el núcleo de los átomos y que se libera
+                    mediante reacciones de fisión (división del núcleo de un átomo) o fusión (Se unen los
+                    núcleos atómicos)</li>
+                <li><span>Potencial gravitatoria:</span> Es la fuerza con que son atraídos los objetos entre sí
+                    debido a los campos gravitacionales asociados a sus masas y a la distancia entre ellos</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section2-inicio">
+        <h2>Cadena energética</h2>
+        <div class="section2-inicio-texto">
+            <p>La cadena energética es la secuencia de actividades que se desarrollan para transformar la
+                energía desde fuentes primarias que se hayan en la naturaleza, en energía eléctrica para
+                posteriormente trasportarla y distribuirla a los consumidores finales.
+            </p>
+            <p>Este proceso de transformación de la energía se da en cuatro etapas:</p>
+        </div>
+        <div class="divs-section2">
+            <div class="divs-section2-hijos">
+                <p class="textos-imgs">1. Generación</p>
+                <img class="imgs-index" src="img/generacion1.jpg" alt="imagen-etapa-generación">
+            </div>
+            <div class="divs-section2-hijos">
+                <p class="textos-imgs">2. Transmisión</p>
+                <img class="imgs-index" src="img/transmision1.jpg" alt="imagen-etapa-transmisión">
+            </div>
+            <div class="divs-section2-hijos">
+                <p class="textos-imgs">3. Distribución</p>
+                <img class="imgs-index" src="img/distribucion1.jpg" alt="imagen-etapa-distribución">
+            </div>
+            <div class="divs-section2-hijos">
+                <p class="textos-imgs">4. Comercialización</p>
+                <img class="imgs-index" src="img/comercializacion1.jpg" alt="imagen-etapa-comercialización">
+            </div>
+        </div>
+    </section>
+
+    <footer id="mixin-flex" class="footer">
+        <div>
+            <p>Encuentrame en:</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://www.youtube.com/" target="_blank" class="iconos">
+                <img src="img/youtube-icon.svg" width="25" height="25" alt="Logo youtube">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="iconos">
+                <img src="img/instagram.svg" width="25" height="25" alt="Logo instagram">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="iconos">
+                <img src="img/linkedin.svg" width="25" height="25" alt="Logo linkedin">
+            </a>
+            <a href="#arriba" class="ir-arriba">Ir arriba</a>
+        </div>
+    </footer>
+
+    <!--script de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
